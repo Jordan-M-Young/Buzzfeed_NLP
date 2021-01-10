@@ -29,12 +29,12 @@ def build_text_files(data_json,dest_dir):
     return data
 
 
-data = pd.read_csv('E:/PythonProjects/Buzzfeed_NLP/Article_Data.csv')
+data = pd.read_csv('Article_Data.csv')
 
 articles = data[data['Page_Type'] == 'Article']
 
 
-save_path = 'E:/PythonProjects/Buzzfeed_NLP/Article_json_paths.csv'
+save_path = 'Article_json_paths.csv'
 
 
 
