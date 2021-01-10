@@ -7,7 +7,7 @@ Created on Sun Dec 27 10:50:37 2020
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import torch
 
-model = GPT2LMHeadModel.from_pretrained('E:/buzz-article-gpt-2')
+model = GPT2LMHeadModel.from_pretrained('jordan-m-young/buzz-article-gpt-2')
 
 z = GPT2Tokenizer.from_pretrained("gpt2")
 
