@@ -9,7 +9,7 @@ import torch
 
 model = GPT2LMHeadModel.from_pretrained('jordan-m-young/buzz-article-gpt-2')
 
-z = GPT2Tokenizer.from_pretrained("gpt2")
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 
 input_ids = z.encode("18 Times Teen TV Shows Were Just Really, Really Good\n",
                              return_tensors='pt')
@@ -26,4 +26,4 @@ sample_output = model.generate(
 )
 
 print("Output:\n"  + 100 * '-')
-print(z.decode(sample_output[0], skip_special_tokens=False))
+print(tokenizer.decode(sample_output[0], skip_special_tokens=False))
