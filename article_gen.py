@@ -11,7 +11,7 @@ model = GPT2LMHeadModel.from_pretrained('jordan-m-young/buzz-article-gpt-2')
 
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 
-input_ids = z.encode("18 Times Teen TV Shows Were Just Really, Really Good\n",
+input_ids = model.encode("18 Times Teen TV Shows Were Just Really, Really Good\n",
                              return_tensors='pt')
 
 # set seed to reproduce results. Feel free to change the seed though to get different results
